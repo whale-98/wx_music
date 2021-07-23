@@ -1,0 +1,126 @@
+.searchContainer{
+  padding: 0 20rpx;
+}
+
+.header{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 10rpx 0;
+}
+
+.searchInput{
+  position: relative;
+  flex: 1;
+  background: rgba(237, 237, 237, 0.3);
+  border-radius: 30rpx;
+}
+
+.cancel{
+  width: 100rpx;
+  text-align: center;
+}
+
+.searchInput .iconfont{
+  position: absolute;
+
+}
+
+.searchInput input{
+  margin-left: 50rpx;
+  height: 60rpx;
+}
+
+.clear{
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  font-size: 30rpx;
+  z-index: 10;
+}
+
+.placeholder{
+  /* color: #d43c33; */
+  font-style: 28rpx;
+}
+
+
+/* 热搜榜 */
+.hotContainer .title{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.hotList{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotItem{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+}
+
+.hotItem .order{
+  margin: 0 10rpx;
+}
+
+.hotItem .iconImg{
+  width: 35rpx;
+  height: 20rpx;
+  margin-left: 14rpx;
+}
+
+.searchContent{
+  color: #d43c33;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  border-bottom: 1px solid #d43c33;
+}
+.searchItem{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+
+.searchItem .content{
+  flex: 1;
+  margin-left: 20rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 26rpx;
+}
+
+.history{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}
+
+.history .title{
+  font-size: 28rpx;
+  height: 50rpx;
+}
+
+.history .historyItem{
+  height: 50rpx;
+  font-size: 26rpx;
+  background-color: #ededed;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.history .delete{
+  position: absolute;
+  bottom: 10rpx;
+  right: 15rpx;
+  font-size: 36rpx;
+}

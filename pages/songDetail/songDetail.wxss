@@ -1,0 +1,126 @@
+.songDetailContainer{
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cricle{
+  z-index: 100;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+
+.needle{
+  position: relative;
+  z-index: 99;
+  top: -40rpx;
+  left: 60rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transition: transform 0.5s;
+  transform-origin: 40rpx 0;
+}
+
+.needleRotate{
+  transform: rotate(-20deg);
+}
+
+.discContainer {
+  position: relative;
+  top: -170rpx;
+  width: 598rpx;
+  height: 598rpx;
+}
+
+.discAnimation{
+  animation: disc 4s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes disc{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.disc{
+  width: 598rpx;
+  height: 598rpx;
+}
+
+.musicImg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370rpx;
+  height: 370rpx;
+  border-radius: 50%;
+}
+
+.musicControl{
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  border-top: 1px solid #fff;
+  width: 100%;
+  display: flex;
+}
+
+.musicControl text{
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 50rpx;
+}
+
+.musicControl text.big{
+  font-size: 80rpx;
+}
+
+/* 进度条控制区域 */
+.progressControl{
+  position: absolute;
+  bottom: 200rpx;
+  width: 640rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+
+.barControl{
+  position: relative;
+  width: 450rpx;
+  height: 4rpx;
+  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+
+.audio-currenTime-Bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 4rpx;
+  background: red;
+}
+
+.audio-circle{
+  position: absolute;
+  right: -12rpx;
+  top: -4rpx;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #fff;
+}

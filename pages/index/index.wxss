@@ -1,0 +1,117 @@
+/* pages/index/index.wxss */
+.banners{
+  width: 100%;
+  height: 300rpx;
+}
+.banners image{
+  width: 100%;
+  height: 100%;
+}
+
+/*导航栏区域*/
+.navContainer{
+  display: flex;
+}
+
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background: rgb(240, 19, 19);
+  font-size: 50rpx;
+  color: #fff;
+  margin: 20rpx 0;
+}
+
+.navItem text{
+  font-size: 26rpx;
+}
+
+
+/*推荐歌曲*/
+.recommendContainer{
+  padding: 20rpx;
+}
+
+/*推荐内容区*/
+.recommendScroll{
+  display: flex;
+  height: 300rpx;
+}
+
+.scrollItem{
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.scrollItem text{
+  font-size: 26rpx;
+  /*多行文本溢出省略*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;/*设置对齐模式*/
+  -webkit-line-clamp: 2;/*设置多行的行数*/
+}
+
+
+/*排行榜区域*/
+.topList{
+  padding: 20rpx;
+}
+
+.topListSwiper{
+  height: 420rpx;
+}
+
+.swiperItem{
+  width: 96%;
+  background-color: #FBFBFB;
+}
+
+.swiperItem .title{
+  font-style: 30rpx;
+  line-height: 80rpx;
+}
+
+.musicItem{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 8rpx;
+}
+
+.musicItem .count{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.musicItem .musicName{
+  height: 100rpx;
+  line-height: 100rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

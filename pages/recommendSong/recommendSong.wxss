@@ -1,0 +1,90 @@
+.recommendSongContainer .header{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+
+.recommendSongContainer .header image{
+  width: 100%;
+  height: 100%;
+}
+
+.recommendSongContainer .header .date{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+}
+
+/* 列表区样式 */
+.listContainer{
+  position: relative;
+  top: -20rpx;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background: #fff;
+}
+
+.listHeader{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.listHeader .changeMore{
+  float: right;
+}
+
+/* 内容区 */
+.listScroll{
+  height: calc(100vh - 380rpx);
+}
+
+.scrollItem{
+  display: flex;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+.scrollItem image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+
+.musicInfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx ;
+}
+
+.musicInfo text{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx ;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrollItem .iconfont{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  right: 0;
+}
+
+ 
+
+
+
+
+
+
